@@ -52,3 +52,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+Blazor.Extensions.App.Server/.vs/Blazor.Extensions.App.Server/CopilotIndices/
+Blazor.Extensions.App.Server/.vs/Blazor.Extensions.App.Server/FileContentIndex/
+Blazor.Extensions.App.Server/.vs/Blazor.Extensions.App.Server/v17/
+Blazor.Extensions.App.Server/.vs/Blazor.Extensions.App.Server/DesignTimeBuild/
+*.user
+.vs/

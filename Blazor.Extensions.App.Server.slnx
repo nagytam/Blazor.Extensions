@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="Blazor.Extensions.App.Server/Blazor.Extensions.App.Server.csproj">
+    <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
+  </Project>
+  <Project Path="Blazor.Extensions.Components.Core.Tests/Blazor.Extensions.Components.Core.Tests.csproj" />
+  <Project Path="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
+  <Project Path="Blazor.Extensions.Components/Blazor.Extensions.Components.csproj">
+    <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
+  </Project>
+</Solution>
