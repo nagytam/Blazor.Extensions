@@ -1,8 +1,4 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
 using Blazor.Extensions.Components.Core.Helpers;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Blazor.Extensions.Components.Core.Tests.Helpers;
 
