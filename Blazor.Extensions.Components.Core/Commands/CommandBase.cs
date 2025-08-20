@@ -95,7 +95,7 @@ public abstract class CommandBase(IRefreshable? control)
     public IRefreshable? Control = control;
     #endregion
 
-    #region OnClick & Execute
+    #region OnClickAsync & StartExecuteAsync & OnExecuteAsync
     private Task? _task = null;
     private CancellationTokenSource? _cancellationTokenSource = null;
     private CancellationToken? _cancellationToken = null;
@@ -159,7 +159,6 @@ public abstract class CommandBase(IRefreshable? control)
         {
             Stopwatch.Stop();
             Stopwatch.Reset();
-            // deactivate periodic refresh before cancelling to stop further invocations
             periodicTask.IsActive = false;
             if (_cancellationTokenSource != null)
             {
