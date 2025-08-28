@@ -4,6 +4,7 @@
   </Project>
   <Project Path="Blazor.Extensions.Components.Core.Tests/Blazor.Extensions.Components.Core.Tests.csproj" />
   <Project Path="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
+  <Project Path="Blazor.Extensions.Components.Test/Blazor.Extensions.Components.Test.csproj" Id="f40751db-d480-48b8-84cc-499c9f992a06" />
   <Project Path="Blazor.Extensions.Components/Blazor.Extensions.Components.csproj">
     <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
   </Project>

@@ -1,7 +1,7 @@
 ﻿using Blazor.Extensions.Components.Core.Commands;
 using Blazor.Extensions.Components.Core.Controls;
 
-namespace Blazor.Extensions.App.Server.Commands;
+namespace Blazor.Extensions.Components.Commands;
 
 public class LongRunningCommand : CommandBase
 {
