@@ -5,6 +5,8 @@ using Blazor.Extensions.App.Server.Components;
 using Blazor.Extensions.App.Server.Components.Account;
 using Blazor.Extensions.App.Server.Data;
 using Blazor.Extensions.Components.Helpers;
+using Blazor.Extensions.Components.Extensions;
+using Microsoft.AspNetCore.Mvc;
 
 SyncfusionHelper.Initialize();
 
@@ -15,6 +17,8 @@ builder.Services
     .AddInteractiveServerComponents();
 
 builder.Services.AddBlazorExtension();
+builder.Services.AddLocalizationExtension();
+builder.Services.AddControllers();
 
 builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
@@ -41,6 +45,11 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
 
 var app = builder.Build();
+
+#region Localization
+app.SetDefaultAndSupportedCultures(Cultures.SupportedCultures, Cultures.DefaultCultureName);
+app.MapControllers();
+#endregion
 
 if (app.Environment.IsDevelopment())
 {

@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Readme.txt" />
+  </Folder>
   <Project Path="Blazor.Extensions.App.Server/Blazor.Extensions.App.Server.csproj">
     <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
   </Project>

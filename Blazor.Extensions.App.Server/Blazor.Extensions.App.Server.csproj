@@ -9,20 +9,42 @@
 
   <ItemGroup>
     <PackageReference Include="Brushtail.FontAwesome.Blazor" Version="1.0.19" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="SonarAnalyzer.CSharp" Version="10.15.0.120848">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Syncfusion.Blazor.Core" Version="30.2.6" />
-    <PackageReference Include="Syncfusion.Blazor.Themes" Version="30.2.6" />
+    <PackageReference Include="Syncfusion.Blazor.Core" Version="31.1.19" />
+    <PackageReference Include="Syncfusion.Blazor.Themes" Version="31.1.19" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Blazor.Extensions.Components\Blazor.Extensions.Components.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+        <Compile Update="Locales\Resources.en-US.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.en-US.resx</DependentUpon>
+        </Compile>
+        <Compile Update="Locales\Resources.en-US.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resources.en-US.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Locales\Resource.resx">
+      <Generator></Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
