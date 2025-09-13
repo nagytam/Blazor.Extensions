@@ -1,9 +1,17 @@
-﻿using Blazor.Extensions.Infrastructure.Data;
+﻿using Blazor.Extensions.Application.Services;
+using Blazor.Extensions.Infrastructure.Data;
 using Microsoft.AspNetCore.Components;
 
 namespace Blazor.Extensions.App.Server.Components.Pages;
 
 public class DiagnosticsComponent : ComponentBase
 {
-    [Inject] BlazorDbContext DbContext { get; set; }
+    [Inject] FileService FileService{ get; set; }
+
+    protected List<PersistedFileInformation> PersistedFileInformations => FileService.PersistedFileInformations;
+
+    protected void OnFilesChanged()
+    {
+        InvokeAsync(() => StateHasChanged());
+    }
 }

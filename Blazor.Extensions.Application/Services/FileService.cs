@@ -1,26 +1,27 @@
 ﻿using Blazor.Extensions.Infrastructure.Data;
-using Microsoft.AspNetCore.Components;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Blazor.Extensions.Application.Services
+namespace Blazor.Extensions.Application.Services;
+
+public class FileService
 {
-    public class FileService
+    protected BlazorDbContext DbContext { get; set; }
+
+    public List<PersistedFileInformation> PersistedFileInformations 
+    { 
+        get
+        {
+            return DbContext.PersistedFiles.Cast<PersistedFileInformation>().ToList();
+        }
+    }
+
+    public FileService(BlazorDbContext dbContext)
     {
-        protected BlazorDbContext DbContext { get; set; }
+        DbContext = dbContext;
+    }
 
-        public FileService(BlazorDbContext dbContext)
-        {
-            DbContext = dbContext;
-        }
-
-        public async Task UploadFileAsync(PersistedFile persistedFile)
-        {
-            DbContext.PersistedFiles.Add(persistedFile);
-            await DbContext.SaveChangesAsync();
-        }
+    public async Task UploadFileAsync(PersistedFile persistedFile)
+    {
+        DbContext.PersistedFiles.Add(persistedFile);
+        await DbContext.SaveChangesAsync();
     }
 }

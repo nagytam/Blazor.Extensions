@@ -1,7 +1,6 @@
 ﻿using Blazor.Extensions.Application.Core.Controls;
 using Blazor.Extensions.Application.Core.Helpers;
 using Microsoft.AspNetCore.Components.Web;
-using Microsoft.Extensions.Logging;
 using System.Diagnostics;
 
 namespace Blazor.Extensions.Application.Core.Commands;

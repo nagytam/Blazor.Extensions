@@ -9,6 +9,9 @@ public class FileUploadComponent : ComponentBase
 {
     [Inject]
     private FileService FileService { get; set; }
+    public delegate void FilesChanged();
+    [Parameter]
+    public FilesChanged? OnFilesChanged {  get; set; }
 
     protected async Task OnChange(UploadChangeEventArgs args)
     {
@@ -31,6 +34,8 @@ public class FileUploadComponent : ComponentBase
                     persistedFile.Content = memoryStream.ToArray();
                 }
                 await FileService.UploadFileAsync(persistedFile);
+
+                OnFilesChanged?.Invoke();
             }
         }
         catch (Exception ex)

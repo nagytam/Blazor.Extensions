@@ -4,6 +4,6 @@
 
 @inherits Blazor.Extensions.Presentation.Components.FileUploadComponent
 
-<SfUploader AutoUpload="true">
+<SfUploader AutoUpload="true" MaxFileSize=1_000_000_000>
     <UploaderEvents ValueChange="@OnChange"></UploaderEvents>
 </SfUploader>

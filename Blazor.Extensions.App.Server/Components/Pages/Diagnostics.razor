@@ -3,6 +3,7 @@
 @using Microsoft.Extensions.Localization
 @using System.Globalization
 @using Blazor.Extensions.Presentation.Components
+@using Syncfusion.Blazor.Grids
 
 @inherits DiagnosticsComponent
 @inject IStringLocalizer<Resource> Localizer
@@ -18,3 +19,7 @@
 <h1>@Localizer["Hello"]</h1>
 
 <FileUpload></FileUpload>
+
+<!-- OnFilesChanged="OnFilesChanged" -->
+<h1>Persistent Files</h1>
+<SfGrid DataSource="@PersistedFileInformations" />
