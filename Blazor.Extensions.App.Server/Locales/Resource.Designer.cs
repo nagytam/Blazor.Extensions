@@ -68,5 +68,14 @@ namespace Blazor.Extensions.App.Server.Locales {
                 return ResourceManager.GetString("Hello", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help.
+        /// </summary>
+        public static string Help {
+            get {
+                return ResourceManager.GetString("Help", resourceCulture);
+            }
+        }
     }
 }

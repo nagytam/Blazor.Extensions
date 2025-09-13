@@ -1,4 +1,6 @@
-﻿@inherits MainLayoutComponent
+﻿@using Blazor.Extensions.App.Server.Locales
+
+@inherits MainLayoutComponent
 
 <div class="page">
     <main>
@@ -9,7 +11,7 @@
                         <MenuItem Text="≡" Url="/"></MenuItem>
                         <MenuItem Text="Components" Url="Components"></MenuItem>
                         <MenuItem Text="Diagnostics" Url="Diagnostics"></MenuItem>
-                        <MenuItem Text="Help" Url="Help"></MenuItem>
+                        <MenuItem Text="@Resource.Help" Url="Help"></MenuItem>
                     </MenuItems>
                 </SfMenu>
                 <AppBarSpacer></AppBarSpacer>

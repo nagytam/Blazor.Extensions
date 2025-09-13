@@ -30,6 +30,11 @@
   </ItemGroup>
 
   <ItemGroup>
+        <Compile Update="Locales\Resource.Designer.cs">
+          <DesignTime>True</DesignTime>
+          <AutoGen>True</AutoGen>
+          <DependentUpon>Resource.resx</DependentUpon>
+        </Compile>
         <Compile Update="Locales\Resources.en-US.Designer.cs">
             <DesignTime>True</DesignTime>
             <AutoGen>True</AutoGen>
@@ -44,7 +49,8 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Locales\Resource.resx">
-      <Generator></Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
