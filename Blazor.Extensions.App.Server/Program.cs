@@ -3,10 +3,11 @@ using Microsoft.AspNetCore.Identity;
 using Blazor.Extensions.App.Server.Components;
 using Blazor.Extensions.App.Server.Components.Account;
 using Blazor.Extensions.Infrastructure.Data;
-using Blazor.Extensions.Components.Helpers;
-using Blazor.Extensions.Components.Extensions;
 using Blazor.Extensions.Infrastructure.Extensions;
-    
+using Blazor.Extensions.Presentation.Helpers;
+using Blazor.Extensions.Domain.Extensions;
+using Blazor.Extensions.Domain.Model;
+
 SyncfusionHelper.Initialize();
 
 var builder = WebApplication.CreateBuilder(args);

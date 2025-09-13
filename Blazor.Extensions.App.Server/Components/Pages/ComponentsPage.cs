@@ -1,5 +1,5 @@
-﻿using Blazor.Extensions.Components.Commands;
-using Blazor.Extensions.Components.Core.Controls;
+﻿using Blazor.Extensions.Application.Commands;
+using Blazor.Extensions.Application.Core.Controls;
 
 namespace Blazor.Extensions.App.Server.Components.Pages;
 

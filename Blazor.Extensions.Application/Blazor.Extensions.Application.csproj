@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     <PackageReference Include="Microsoft.AspNetCore.Localization" Version="2.3.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blazor.Extensions.Application.Core\Blazor.Extensions.Application.Core.csproj" />
+    <ProjectReference Include="..\Blazor.Extensions.Domain\Blazor.Extensions.Domain.csproj" />
   </ItemGroup>
 
 </Project>

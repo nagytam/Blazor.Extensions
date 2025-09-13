@@ -1,7 +1,5 @@
-﻿using Blazor.Extensions.Components.Helpers;
+﻿using Blazor.Extensions.Domain.Helpers;
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Localization;
-using System.Globalization;
 
 namespace Blazor.Extensions.App.Server.Components;
 

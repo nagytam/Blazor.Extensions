@@ -1,0 +1,36 @@
+@using Microsoft.AspNetCore.Components
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.DropDowns
+@using Syncfusion.Blazor.Popups
+
+@using Blazor.Extensions.Domain.Model
+
+@rendermode Microsoft.AspNetCore.Components.Web.RenderMode.InteractiveServer
+
+<div class="hstack gap-3">
+    <div>
+        <SfIcon Name="IconName.Translate" Title="Select the language"></SfIcon>
+    </div>
+    <div>
+         <SfDropDownList ID="languageSelector"
+                        TValue="string"
+                        TItem="Blazor.Extensions.Domain.Model.Culture"
+                        DataSource=@Blazor.Extensions.Domain.Model.Cultures.SupportedCultures
+                        @bind-Value=@SelectedLanguage
+                        AllowFiltering="true"
+                        Width="90px"
+                        PopupWidth="145px">
+            <DropDownListTemplates TItem="Blazor.Extensions.Domain.Model.Culture">
+                <ItemTemplate>
+                    <span class='name'>@(context.Description)</span>
+                </ItemTemplate>
+                <ValueTemplate>
+                    <span>@(context.DisplayName)</span>
+                </ValueTemplate>
+            </DropDownListTemplates>
+            <DropDownListFieldSettings Text="@nameof(Blazor.Extensions.Domain.Model.Culture.Description)"
+                                        Value="@nameof(Blazor.Extensions.Domain.Model.Culture.Name)">
+            </DropDownListFieldSettings>
+        </SfDropDownList>
+     </div>
+</div>

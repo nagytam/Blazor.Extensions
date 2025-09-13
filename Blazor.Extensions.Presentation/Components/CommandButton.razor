@@ -1,0 +1,13 @@
+﻿@using Syncfusion.Blazor.Buttons;
+
+@inherits Blazor.Extensions.Presentation.Components.CommandButtonComponent
+
+<SfButton Content="@Command.Content"
+    id="@Command.Id"
+    OnClick="@Command.OnClickAsync" 
+    IsPrimary="@Command.IsPrimary" 
+    Disabled="@Command.IsDisabled"
+    CssClass="@Command.CssClass"
+    IconCss="@Command.IconCss"
+>    
+</SfButton>

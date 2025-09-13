@@ -2,15 +2,11 @@
   <Folder Name="/Solution Items/">
     <File Path="Readme.txt" />
   </Folder>
-  <Project Path="Blazor.Extensions.App.Server/Blazor.Extensions.App.Server.csproj">
-    <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
-  </Project>
-  <Project Path="Blazor.Extensions.Components.Core.Tests/Blazor.Extensions.Components.Core.Tests.csproj" />
-  <Project Path="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
-  <Project Path="Blazor.Extensions.Components.Test/Blazor.Extensions.Components.Test.csproj" Id="f40751db-d480-48b8-84cc-499c9f992a06" />
-  <Project Path="Blazor.Extensions.Components/Blazor.Extensions.Components.csproj">
-    <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
-  </Project>
+  <Project Path="Blazor.Extensions.App.Server/Blazor.Extensions.App.Server.csproj" />
+  <Project Path="Blazor.Extensions.Application.Core.Tests/Blazor.Extensions.Application.Core.Tests.csproj" Id="9393f43a-0439-4db3-b489-4bec0086903e" />
+  <Project Path="Blazor.Extensions.Application.Core/Blazor.Extensions.Application.Core.csproj" Id="5b572186-341e-45c3-9ab2-cec7e36352d1" />
+  <Project Path="Blazor.Extensions.Application.Tests/Blazor.Extensions.Application.Tests.csproj" Id="0368dc99-d1e8-4a6e-a09a-d4b0f3e5e0aa" />
+  <Project Path="Blazor.Extensions.Application/Blazor.Extensions.Application.csproj" Id="ad3e6234-a983-4992-b7e8-9e18a98ab849" />
   <Project Path="Blazor.Extensions.Domain/Blazor.Extensions.Domain.csproj" Id="88c2934a-1740-454b-817e-d43494c8c767" />
   <Project Path="Blazor.Extensions.Infrastructure/Blazor.Extensions.Infrastructure.csproj" Id="38cc720c-0fc9-4fef-9beb-bd8b2011936f" />
   <Project Path="Blazor.Extensions.Presentation/Blazor.Extensions.Presentation.csproj" Id="9360e276-487a-4a60-80ce-4f4c4d8a6f06" />
