@@ -6,25 +6,30 @@
 
 @rendermode Microsoft.AspNetCore.Components.Web.RenderMode.InteractiveServer
 
-<div class="language-selector">
-    <SfIcon Name="IconName.Translate" Title="Select the language"></SfIcon>
-    <SfDropDownList ID="languageSelector"
-                    TValue="string"
-                    TItem="Culture"
-                    DataSource=@Cultures.SupportedCultures
-                    @bind-Value=@SelectedLanguage
-                    AllowFiltering="true"
-                    Width="180px">
-        <DropDownListTemplates TItem="Culture">
-            <ItemTemplate>
-                <span class='name'>@(context.Description)</span>
-            </ItemTemplate>
-            <ValueTemplate>
-                <span>@(context.DisplayName)</span>
-            </ValueTemplate>
-        </DropDownListTemplates>
-        <DropDownListFieldSettings Text="@nameof(Culture.Description)"
-                                    Value="@nameof(Culture.Name)">
-        </DropDownListFieldSettings>
-    </SfDropDownList>
+<div class="hstack gap-3">
+    <div>
+        <SfIcon Name="IconName.Translate" Title="Select the language"></SfIcon>
+    </div>
+    <div>
+        <SfDropDownList ID="languageSelector"
+                        TValue="string"
+                        TItem="Culture"
+                        DataSource=@Cultures.SupportedCultures
+                        @bind-Value=@SelectedLanguage
+                        AllowFiltering="true"
+                        Width="90px"
+                        PopupWidth="145px">
+            <DropDownListTemplates TItem="Culture">
+                <ItemTemplate>
+                    <span class='name'>@(context.Description)</span>
+                </ItemTemplate>
+                <ValueTemplate>
+                    <span>@(context.DisplayName)</span>
+                </ValueTemplate>
+            </DropDownListTemplates>
+            <DropDownListFieldSettings Text="@nameof(Culture.Description)"
+                                        Value="@nameof(Culture.Name)">
+            </DropDownListFieldSettings>
+        </SfDropDownList>
+    </div>
 </div>

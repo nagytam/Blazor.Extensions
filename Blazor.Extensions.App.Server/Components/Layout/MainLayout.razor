@@ -1,15 +1,20 @@
 ﻿@inherits MainLayoutComponent
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-            <HorizontalSeparator/>
-            <LanguageSelectorComponent />
+        <div class="control-container">
+            <SfAppBar ColorMode="AppBarColor.Primary">
+                <SfMenu TValue="MenuItem">
+                    <MenuItems>
+                        <MenuItem Text="≡" Url="/"></MenuItem>
+                        <MenuItem Text="Components" Url="Components"></MenuItem>
+                        <MenuItem Text="Diagnostics" Url="Diagnostics"></MenuItem>
+                        <MenuItem Text="Help" Url="Help"></MenuItem>
+                    </MenuItems>
+                </SfMenu>
+                <AppBarSpacer></AppBarSpacer>
+                <LanguageSelectorComponent />
+            </SfAppBar>
         </div>
 
         <article class="content px-4">
