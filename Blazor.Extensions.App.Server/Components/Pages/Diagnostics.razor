@@ -2,7 +2,9 @@
 @using Blazor.Extensions.App.Server.Locales
 @using Microsoft.Extensions.Localization
 @using System.Globalization
+@using Blazor.Extensions.Presentation.Components
 
+@inherits DiagnosticsComponent
 @inject IStringLocalizer<Resource> Localizer
 
 <PageTitle>Diagnostics</PageTitle>
@@ -15,3 +17,4 @@
 <h1>@Resource.Hello</h1>
 <h1>@Localizer["Hello"]</h1>
 
+<FileUpload></FileUpload>

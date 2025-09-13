@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using Blazor.Extensions.App.Server.Data;
+using Blazor.Extensions.Infrastructure.Data;
 
 namespace Blazor.Extensions.App.Server.Components.Account;
 

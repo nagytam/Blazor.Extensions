@@ -11,4 +11,7 @@
   <Project Path="Blazor.Extensions.Components/Blazor.Extensions.Components.csproj">
     <BuildDependency Project="Blazor.Extensions.Components.Core/Blazor.Extensions.Components.Core.csproj" />
   </Project>
+  <Project Path="Blazor.Extensions.Domain/Blazor.Extensions.Domain.csproj" Id="88c2934a-1740-454b-817e-d43494c8c767" />
+  <Project Path="Blazor.Extensions.Infrastructure/Blazor.Extensions.Infrastructure.csproj" Id="38cc720c-0fc9-4fef-9beb-bd8b2011936f" />
+  <Project Path="Blazor.Extensions.Presentation/Blazor.Extensions.Presentation.csproj" Id="9360e276-487a-4a60-80ce-4f4c4d8a6f06" />
 </Solution>

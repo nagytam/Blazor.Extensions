@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Primitives;
 using Blazor.Extensions.App.Server.Components.Account.Pages;
 using Blazor.Extensions.App.Server.Components.Account.Pages.Manage;
-using Blazor.Extensions.App.Server.Data;
+using Blazor.Extensions.Infrastructure.Data;
 
 namespace Microsoft.AspNetCore.Routing;
 

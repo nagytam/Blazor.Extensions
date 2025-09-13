@@ -1,13 +1,12 @@
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Blazor.Extensions.App.Server.Components;
 using Blazor.Extensions.App.Server.Components.Account;
-using Blazor.Extensions.App.Server.Data;
+using Blazor.Extensions.Infrastructure.Data;
 using Blazor.Extensions.Components.Helpers;
 using Blazor.Extensions.Components.Extensions;
-using Microsoft.AspNetCore.Mvc;
-
+using Blazor.Extensions.Infrastructure.Extensions;
+    
 SyncfusionHelper.Initialize();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,10 +31,7 @@ builder.Services.AddAuthentication(options =>
     })
     .AddIdentityCookies();
 
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
-builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 
 builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<ApplicationDbContext>()

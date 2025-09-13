@@ -1,0 +1,9 @@
+﻿@using Syncfusion.Blazor.Inputs;
+
+@rendermode Microsoft.AspNetCore.Components.Web.RenderMode.InteractiveServer
+
+@inherits Blazor.Extensions.Presentation.Components.FileUploadComponent
+
+<SfUploader AutoUpload="true">
+    <UploaderEvents ValueChange="@OnChange"></UploaderEvents>
+</SfUploader>
