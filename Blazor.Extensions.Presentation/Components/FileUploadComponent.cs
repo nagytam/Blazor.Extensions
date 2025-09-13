@@ -1,4 +1,5 @@
-﻿using Blazor.Extensions.Infrastructure.Data;
+﻿using Blazor.Extensions.Application.Services;
+using Blazor.Extensions.Infrastructure.Data;
 using Microsoft.AspNetCore.Components;
 using Syncfusion.Blazor.Inputs;
 
@@ -7,7 +8,8 @@ namespace Blazor.Extensions.Presentation.Components;
 public class FileUploadComponent : ComponentBase
 {
     [Inject]
-    protected BlazorDbContext DbContext { get; set; }
+    private FileService FileService { get; set; }
+
     protected async Task OnChange(UploadChangeEventArgs args)
     {
         try
@@ -28,8 +30,7 @@ public class FileUploadComponent : ComponentBase
                     await stream.CopyToAsync(memoryStream);
                     persistedFile.Content = memoryStream.ToArray();
                 }
-                DbContext.PersistedFiles.Add(persistedFile);
-                await DbContext.SaveChangesAsync();
+                await FileService.UploadFileAsync(persistedFile);
             }
         }
         catch (Exception ex)

@@ -18,6 +18,7 @@ builder.Services
 
 builder.Services.AddBlazorExtension();
 builder.Services.AddLocalizationExtension();
+builder.Services.AddApplicationServices();
 builder.Services.AddControllers();
 
 builder.Services.AddCascadingAuthenticationState();
