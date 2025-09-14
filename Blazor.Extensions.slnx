@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/Solution Items/">
+    <File Path="agents.md" />
     <File Path="Readme.txt" />
   </Folder>
   <Project Path="Blazor.Extensions.App.Server.Tests/Blazor.Extensions.App.Server.Tests.csproj" Id="74258ff8-d6cc-4d08-bd0a-efce949b827e" />
