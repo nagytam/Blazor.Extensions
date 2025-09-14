@@ -32,7 +32,7 @@ jobs:
       run: dotnet build
 
     - name: Ensure that Playwright is installed
-      run: pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install --with-deps
+      run: pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install
 
     - name: Execute unit tests
       run: dotnet test
