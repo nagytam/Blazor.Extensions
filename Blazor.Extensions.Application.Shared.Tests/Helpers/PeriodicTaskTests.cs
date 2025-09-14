@@ -1,6 +1,6 @@
-using Blazor.Extensions.Application.Core.Helpers;
+using Blazor.Extensions.Application.Shared.Helpers;
 
-namespace Blazor.Extensions.Application.Core.Tests.Helpers;
+namespace Blazor.Extensions.Application.Shared.Tests.Helpers;
 
 [TestClass]
 public class PeriodicTaskTests

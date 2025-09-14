@@ -1,7 +1,7 @@
-using Blazor.Extensions.Application.Core.Commands;
-using Blazor.Extensions.Application.Core.Controls;
+using Blazor.Extensions.Application.Shared.Commands;
+using Blazor.Extensions.Application.Shared.Controls;
 
-namespace Blazor.Extensions.Application.Core.Tests.Commands;
+namespace Blazor.Extensions.Application.Shared.Tests.Commands;
 
 public sealed class TcsCommand : CommandBase
 {

@@ -1,4 +1,4 @@
-using Blazor.Extensions.Application.Core.Controls;
+using Blazor.Extensions.Application.Shared.Controls;
 
 namespace Blazor.Extensions.Application.Tests.Commands;
 

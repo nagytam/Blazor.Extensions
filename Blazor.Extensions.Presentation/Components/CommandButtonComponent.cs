@@ -1,5 +1,5 @@
-﻿using Blazor.Extensions.Application.Core.Commands;
-using Blazor.Extensions.Application.Core.Controls;
+﻿using Blazor.Extensions.Application.Shared.Commands;
+using Blazor.Extensions.Application.Shared.Controls;
 using Microsoft.AspNetCore.Components;
 
 namespace Blazor.Extensions.Presentation.Components;

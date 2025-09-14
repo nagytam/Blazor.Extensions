@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace Blazor.Extensions.Application.Core.Tests.Commands;
+namespace Blazor.Extensions.Application.Shared.Tests.Commands;
 
 [TestClass]
 public partial class CommandBaseTests

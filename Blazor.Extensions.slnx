@@ -5,8 +5,8 @@
   </Folder>
   <Project Path="Blazor.Extensions.App.Server.Tests/Blazor.Extensions.App.Server.Tests.csproj" Id="74258ff8-d6cc-4d08-bd0a-efce949b827e" />
   <Project Path="Blazor.Extensions.App.Server/Blazor.Extensions.App.Server.csproj" />
-  <Project Path="Blazor.Extensions.Application.Core.Tests/Blazor.Extensions.Application.Core.Tests.csproj" Id="9393f43a-0439-4db3-b489-4bec0086903e" />
-  <Project Path="Blazor.Extensions.Application.Core/Blazor.Extensions.Application.Core.csproj" Id="5b572186-341e-45c3-9ab2-cec7e36352d1" />
+  <Project Path="Blazor.Extensions.Application.Shared.Tests/Blazor.Extensions.Application.Shared.Tests.csproj" Id="9393f43a-0439-4db3-b489-4bec0086903e" />
+  <Project Path="Blazor.Extensions.Application.Shared/Blazor.Extensions.Application.Shared.csproj" Id="5b572186-341e-45c3-9ab2-cec7e36352d1" />
   <Project Path="Blazor.Extensions.Application.Tests/Blazor.Extensions.Application.Tests.csproj" Id="0368dc99-d1e8-4a6e-a09a-d4b0f3e5e0aa" />
   <Project Path="Blazor.Extensions.Application/Blazor.Extensions.Application.csproj" Id="ad3e6234-a983-4992-b7e8-9e18a98ab849" />
   <Project Path="Blazor.Extensions.Domain.Tests/Blazor.Extensions.Domain.Tests.csproj" Id="6f38f01c-c861-4616-9993-dc3f9a51bd64" />

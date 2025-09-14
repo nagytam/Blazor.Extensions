@@ -1,4 +1,4 @@
-﻿namespace Blazor.Extensions.Application.Core.Helpers;
+﻿namespace Blazor.Extensions.Application.Shared.Helpers;
 
 public class PeriodicTask
 {

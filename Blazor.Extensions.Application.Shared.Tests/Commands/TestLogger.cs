@@ -1,4 +1,4 @@
-namespace Blazor.Extensions.Application.Core.Tests.Commands;
+namespace Blazor.Extensions.Application.Shared.Tests.Commands;
 
 public partial class CommandBaseTests
 {

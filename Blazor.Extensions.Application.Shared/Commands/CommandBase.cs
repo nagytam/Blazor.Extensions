@@ -1,9 +1,9 @@
-﻿using Blazor.Extensions.Application.Core.Controls;
-using Blazor.Extensions.Application.Core.Helpers;
+﻿using Blazor.Extensions.Application.Shared.Helpers;
+using Blazor.Extensions.Application.Shared.Controls;
 using Microsoft.AspNetCore.Components.Web;
 using System.Diagnostics;
 
-namespace Blazor.Extensions.Application.Core.Commands;
+namespace Blazor.Extensions.Application.Shared.Commands;
 
 public abstract class CommandBase(IRefreshable? control)
 {
