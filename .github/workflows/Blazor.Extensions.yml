@@ -32,7 +32,8 @@ jobs:
       run: dotnet build
 
     - name: Ensure that Playwright is installed
-      run: sudo pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install --with-deps
+      run: npx playwright install --with-deps
+      # run: sudo pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install --with-deps
 
     - name: Execute unit tests
       run: dotnet test
