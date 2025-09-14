@@ -41,3 +41,12 @@ jobs:
 
     - name: Execute unit tests (Blazor.Extensions.Application.Tests)
       run: dotnet test Blazor.Extensions.Application.Tests/Blazor.Extensions.Application.Tests.csproj
+
+    - name: Execute unit tests (Blazor.Extensions.Domain.Tests)
+      run: dotnet test Blazor.Extensions.Domain.Tests/Blazor.Extensions.Domain.Tests.csproj
+
+    - name: Execute unit tests (Blazor.Extensions.Presentation.Tests)
+      run: dotnet test Blazor.Extensions.Presentation.Tests/Blazor.Extensions.Presentation.Tests.csproj
+
+    - name: Execute unit tests (Blazor.Extensions.Infrastructure.Tests)
+      run: dotnet test Blazor.Extensions.Infrastructure.Tests/Blazor.Extensions.Infrastructure.Tests.csproj
