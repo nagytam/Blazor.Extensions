@@ -4,7 +4,7 @@
 
 <div class="page">
     <main>
-        <div class="control-container">
+        <header>
             <SfAppBar ColorMode="AppBarColor.Primary">
                 <SfMenu TValue="MenuItem">
                     <MenuItems>
@@ -14,14 +14,21 @@
                         <MenuItem Text="@Resource.Help" Url="Help"></MenuItem>
                     </MenuItems>
                 </SfMenu>
-                <AppBarSpacer></AppBarSpacer>
+                <AppBarSpacer/>
                 <LanguageSelectorComponent />
             </SfAppBar>
-        </div>
+        </header>
 
         <article class="content px-4">
             @Body
         </article>
+
+        <footer style="bottom:0px;width:100%;position:fixed">
+            <SfAppBar ColorMode="AppBarColor.Primary">
+                <SoftwareVersion/>
+                <AppBarSpacer />
+            </SfAppBar>
+        </footer>
     </main>
 </div>
 
