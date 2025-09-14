@@ -31,5 +31,9 @@ jobs:
     - name: Build
       run: dotnet build
 
+    - name: Script
+      working-directory: Blazor.Extensions.App.Server.Tests/bin/debug/net9.0
+      run: playwright.ps install
+      shell: pwsh
     - name: Execute unit tests
       run: dotnet test
