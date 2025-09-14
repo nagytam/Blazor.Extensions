@@ -31,10 +31,13 @@ jobs:
     - name: Build
       run: dotnet build
 
-    - name: Ensure that Playwright is installed
-      run: npx playwright install --with-deps
-    - name: Ensure that Playwright is installed
-      run: sudo pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install
+#    - name: Ensure that Playwright is installed
+#      run: npx playwright install --with-deps
+#    - name: Ensure that Playwright is installed
+#      run: sudo pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install
 
-    - name: Execute unit tests
-      run: dotnet test
+    - name: Execute unit tests (Blazor.Extensions.Application.Core.Tests)
+      run: dotnet test Blazor.Extensions.Application.Core.Tests/Blazor.Extensions.Application.Core.Tests.csproj
+
+    - name: Execute unit tests (Blazor.Extensions.Application.Tests)
+      run: dotnet test Blazor.Extensions.Application.Tests/Blazor.Extensions.Application.Tests.csproj
