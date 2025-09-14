@@ -33,7 +33,7 @@ jobs:
 
     - name: Script
       working-directory: Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0
-      run: playwright.ps install
+      run: playwright.ps1 install
       shell: pwsh
     - name: Execute unit tests
       run: dotnet test
