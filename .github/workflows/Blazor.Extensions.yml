@@ -31,10 +31,8 @@ jobs:
     - name: Build
       run: dotnet build
 
-    - name: Script
-      working-directory: Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/
-      run: -f playwright.ps1 install
-      shell: pwsh
+    - name: Ensure that Playwright is installed
+      run: pwsh Blazor.Extensions.App.Server.Tests/bin/${{ matrix.configuration }}/net9.0/playwright.ps1 install --with-deps
 
     - name: Execute unit tests
       run: dotnet test
